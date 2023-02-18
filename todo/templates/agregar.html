@@ -3,12 +3,12 @@
 
 {% block content %}
 
-<div class="container form-control">
+<div class="container form-control text-light" style="background-color: #141E30;">
     <h1>Crear tarea</h1>
     <form method="post">
         {% csrf_token %}
         {{ form.as_p }}
-        <button  type="submit">Crear</button>
+        <button type="submit" class="btn btn-success">Crear</button>
     </form>
 </div>
 
